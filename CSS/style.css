@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@500;600&display=swap');
+@import url("./fonts.css");
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-text-menu: #43592d;
+    --background-header: #E3BB6B;
+    --background-a-header: #eac478;
+    --background-a-header-hover: #D8D18D;
+    --background-section: #eac478;
+}
+
+/*HEADER*/
+#header {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    padding: 8px 10px;
+    z-index: 1;
+}
+
+#header .logo {
+    font-family: 'Fleur', Arial, Helvetica, sans-serif;
+    font-size: 2.8rem;
+    margin-left: 15px;
+    letter-spacing: 0.8rem;
+}
+
+#menus a.menu {
+    text-decoration: none;
+    padding: 8px 20px;
+    margin-left: 6px;
+    color: var(--color-text-menu);
+    font-family: 'Syne', sans-serif;
+    font-size: 1.6em;
+    margin-right: 15px;
+}
+
+menu li {
+    display: inline-block;
+}
+
+a.menu:hover {
+    background-color: var(--background-a-header-hover);
+    transition: .8s;
+}
+/*END HEADER*/
+
+/*SECTION*/
+#about {
+    width: 100%;
+}
+
+#about img {
+    width: 100%;
+    object-fit: fill;
+    margin-top: 30px
+}
+/*END SECTION*/
+
+/*MAIN*/
+#project .project-header {
+    padding: 100px 0;
+    text-align: center;
+    font-size: 6rem;
+    text-shadow: 0.3rem 0.3rem 0.3rem #555;
+    letter-spacing: 0.8rem;
+    font-family: 'Sra', Arial, Helvetica, sans-serif;
+}
+
+#project .all-projects,  #project .project-item, #project .project-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#project .project-item {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#project .project-info {
+    padding: 5%;
+    flex-basis: 40%;
+    background-image: linear-gradient(60deg, var(--background-a-header-hover) 0%, #5A6658 50%, #9C8553 100%);
+}
+
+#project .all-projects .project-img, #project .project-info {
+    height: 100%;
+}
+
+#project .project-img {
+    overflow: hidden;
+}
+
+.project-img img {
+    max-width: 100%;
+    object-fit: cover;
+    transition: .5s ease transform;
+}
+
+#project .project-item:hover .project-img img{
+    transform: scale(1.1);
+}
+
+#project .project-info h2, #project .project-info h3 {
+    font-family: 'Syne', sans-serif;
+}
+
+#project .project-info h2 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-shadow: 0.1rem 0.1rem 0.6rem #DDD;
+}
+
+#project .project-info h3 {
+    font-size: 2.2rem;
+    margin-top: 10px;
+}
+
+#project .project-info p {
+    font-size: 1.6rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify ;
+}
+/*END MAIN*/
+
+/*FOOTER*/
+footer {
+    background: linear-gradient(60deg, #D8D18D 0%, #9C8553 100%);
+}
+
+#contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 16px 0;
+    padding: 8px 0;
+}
+
+#contact p {
+    font-size: 1.7rem;
+    margin-bottom: 8px;
+}
+
+#contact img, #contact i {
+    width: 16px;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+#contact p, #contact li {
+    margin: 8px;
+    display: flex;
+    align-items: center;
+}
+
+#contact a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    letter-spacing: .1rem;
+    font-size: 1.2rem;
+}
+
+#contact a, #contact p {
+    font-family: 'Syne', sans-serif;
+}
+
+.contact-create li {
+    flex-direction: row-reverse;
+}
+
+#contact .contact-create a:hover {
+    color: burlywood;
+}
+
+#contact .contact-s a:hover {
+    color: rgb(107, 80, 44);
+}

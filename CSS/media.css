@@ -1,0 +1,130 @@
+@media only screen and (min-width: 721px) {
+    #project .project-item {
+        flex-direction: row;
+        height: 400px;
+        width: 100%;
+        margin: 1px;
+    }
+    .project-img img {
+        height: 100%;
+    }
+    #project .project-item:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    #project .project-img {
+        flex-basis: initial;
+    }
+}
+
+@media only screen and (max-width: 724px) {
+    #header {
+        padding: 1px 0;
+    }
+    #about img {
+        width: 100%;
+        margin-top: 50px;
+    }
+    #about {
+        min-height: initial;
+        width: initial;
+    }
+    menu li {
+        display: block;
+        margin: 2px;
+        text-align: end;
+    }
+    #menus a.menu {
+        padding: 1px 20px;
+    }
+    #contact {
+        flex-direction: column;
+        justify-content: start;
+    }
+    .contact-s, .contact-create {
+        margin: 10px 0;
+    }
+    #contact .contact-s a:hover {
+        background: -webkit-linear-gradient(60deg, rgb(31, 23, 12) 0%, rgb(53, 40, 23) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    #project .project-header {
+        padding: 80px 0 40px;
+    }
+    .project-header h1 {
+        font-size: 5.4rem;
+    }
+    #project .project-item {
+        display: initial;
+    }
+    #project .project-info h2 {
+        font-size: 3rem;
+    }
+    #project .project-info h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 12px 0 0;
+    }
+    #header .logo {
+        letter-spacing: 1rem;
+    }
+    menu li {
+        display: inline-block;
+        margin: 0;
+    }
+    #menus {
+        margin: 5% 8% 2%;
+    }
+    #menus a.menu {
+        padding: 4px 20px;
+    }
+    #about img {
+        height: 50vh;
+        margin-top: 80px;
+    }
+    #contact {
+        padding: 0;
+    }
+    #contact p {
+        font-size: 1.2rem;
+    }
+    #contact i, #contact img {
+        font-size: 10px;
+        width: 10px;
+    }
+    #contact a {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #header .logo {
+        margin: 0;
+    }
+    #menus {
+        margin-left: 8px;
+        text-align: center;
+    }
+    #about img {
+        width: 118%;
+        height: 40vh;
+        margin-top: 50px;
+        margin-left: -18%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #project .project-info h2 {
+        font-size: 2.4rem;
+    }
+    #project .project-info h3 {
+        font-size: 1rem;
+    }
+}

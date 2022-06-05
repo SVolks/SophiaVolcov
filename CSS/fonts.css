@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Sra';
+    src: local("Sra. Saint Delafield"),
+         url("../fonts/MrsSaintDelafield-Regular.ttf") format('truetype'),
+         url("../fonts/mrssaintdelafield-regular-webfont.woff") format('woff'),
+         url("../fonts/mrssaintdelafield-regular-webfont.woff2") format('woff2');
+         font-weight: normal;
+         font-style: normal;
+}
+
+@font-face {
+     font-family: 'Fleur';
+     src: local("Fleur De Leah"),
+         url("../fonts/FleurDeLeah-Regular.ttf") format('truetype'),
+         url("../fonts/fleurdeleah-regular-webfont.woff") format('woff'),
+         url("../fonts/fleurdeleah-regular-webfont.woff2") format('woff2');
+         font-weight: normal;
+         font-style: normal;
+}
